@@ -2,17 +2,131 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Device</title>
+    <title>ZERO PIZZA</title>
     <link rel="stylesheet" type="text/css" href="sourse/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" type="text/css" href="sourse/css/styles.css">
 </head>
-
 <body>
-
+    <header class="main-header">
+        <nav class="main-navigation">
+            <a class="main-header-logo" href="index.html">
+                <img class="logo" src="./sourse/images/Logo.svg" alt="Логотип ZERRO PIZZA">
+            </a>
+            <ul class="site-navigation">
+                <li class="site-navigation-item"><a class="button" href="#menu">Меню</a></li>
+                <li class="site-navigation-item"><a class="button" href="#dilivery">Доставка</a></li>
+                <li class="site-navigation-item"><a class="button" href="#contacts">Контакты</a></li>
+            </ul>
+            <ul class="header-contacts">
+                <li class="header-contacts-item"><a href="#"><img src="./sourse/images/watsapp.svg" alt="watsapp" width="30px" height="30px"></a></li>
+                <li class="header-contacts-item"><a href="#"><img src="./sourse/images/insta.svg" alt="instagram" width="30px" height="30px"></a></li>
+                <li class="header-contacts-item"><a class="button" href="#">+7 (905) 445-10-29</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="heading">
+            <div class="heading-wr">
+                <div class="heading-content">
+                    <h1 class="heading-caption">Zero Pizza</h1>
+                    <p class="heading-description">Мы не делаем фастфуд,</br>
+                        мы вывели пиццу на новый</br>
+                        уровень </p>
+                    <a href="#next-screen"><span class="next-button">Далее</span></a>
+                </div>
+            </div>
+        </section>
+        <section class="about-pizza">
+            <div class="bake">
+                <div class="player">
+                    <img src="./sourse/images/player.jpg">
+                </div>
+                <div class="bake-info">
+                    <h2>Глиняная печь</h2>
+                    <p>Пицца выпекается в помпейской печи 
+                        <span class="bake-info-wr">при температуре</span>
+                        380 - 400 градусов по Цельсию,
+                        Благодаря своей купольной форме, и 
+                        такой температуре тесто успевает 
+                        приготовиться, а начинка остаётся 
+                        максимально сочной.</p>
+                </div>
+            </div>
+            <div class="pastry">
+                <div class="pastry-img">
+                    <img src="./sourse/images/Mask Group.jpg">
+                </div>
+                <div class="pastry-info">
+                    <p>Для приготовления теста мы берем итальянскую муку из мягких сортов 
+                        пшеницы помола «00» эта мука идеально подходит для неаполитанской пиццы,
+                        так как содержит много протеина.
+                        Тесто готовится с использованием всего 4  ингридиентов. Мука, вода, 
+                        живые дрожжи и морская соль. Без добавления усилителей вкуса, сахара 
+                        или масла. Тесто выдерживается минимум 24 часа, что позволяет дрожжам 
+                        раскрыть все свои свойства, тесто получается менее калорийным и лучше 
+                        усваивается организмом. </p>
+                </div>
+            </div>
+            <div class="ingredients">
+                <div class="ingredients-cheese">
+                    <h2>Импортные сыры</h2>
+                </div>
+                <div class="ingredients-flour">
+                    <h2>Итальянская мука</h2>
+                </div>
+                <div class="ingredients-greens">
+                    <h2>Зелень</h2>
+                    <p>Всегда свежая поставка</p>
+                </div>
+                <div class="ingredients-info">
+                    <h2>Ингредиенты</h2>
+                    <p>Для приготовления мы используем только</br> 
+                        качественные продукты и свежие овощи</p>
+                </div>
+            </div>
+            <div class="slider-menu">
+                <div class="swiper-container gallery-top">
+                    <div class="swiper-wrapper pizza">
+                        <img class="swiper-slide" src="./sourse/images/slide-1.jpg">
+                        <img class="swiper-slide" src="./sourse/images/slide-2.jpg">
+                        <img class="swiper-slide" src="./sourse/images/slide-3.jpg">
+                        <img class="swiper-slide" src="./sourse/images/slide-4.jpg">
+                    </div>
+                    <div class="swiper-button-next swiper-button-white"></div>
+                    <div class="swiper-button-prev swiper-button-white"></div>
+                </div>
+                <div class="swiper-container gallery-thumbs">
+                    <div class="swiper-wrapper prewiev-gallery">
+                        <div class="swiper-slide slide-1"></div>
+                        <div class="swiper-slide slide-2"></div>
+                        <div class="swiper-slide slide-3"></div>
+                        <div class="swiper-slide slide-4"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="menu" class="menu">
+                <div class="menu-logo">
+                    <img src="./sourse/images/Слой 1.svg" alt="Логотип Zero Pizza">
+                    <h2 class="menu-caption">Меню</h2>
+                </div>
+                <div class="swiper-container-menu">
+                    <div class="menu-img swiper-wrapper">
+                        <img class="swiper-slide" src="./sourse/images/menu-drinks.jpg" alt="">
+                        <img class="swiper-slide" src="./sourse/images/menu-pizza.jpg" alt="">
+                        <img class="swiper-slide" src="./sourse/images/menu-panini.jpg" alt="">
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <section class="delivery">
+            <div class="delivery-head"></div>
+        </section>
+    </main>
+    <footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    </footer>
 </body>
-
-<footer>
-
-</footer>
 <script src="./sourse/js/main.js"></script>
 </html>

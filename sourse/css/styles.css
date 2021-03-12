@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,700&display=swap');
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 2.4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.main-header {
+    padding: 3.5rem 8.5%;
+}
+
+.main-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header-logo {
+    margin-right: 6rem;
+    width: 23rem;
+    height: 4.6rem;
+    text-align: center;
+}
+
+.site-navigation {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.button {
+    display: inline-block;
+    text-transform: uppercase;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1rem 1.9rem;
+    font-weight: 700;
+    font-size: 1.8rem;
+    min-width: 14.7rem;
+    text-align: center;
+    line-height: 2.2rem;
+}
+
+.site-navigation-item {
+    margin-right: 3rem;
+}
+
+.header-contacts {
+    display: flex;
+    align-items: center;
+}
+
+.header-contacts-item {
+    margin-right: 2rem;
+}
+
+.header-contacts-item:last-child {
+    margin-right: 0;
+}
+
+.header-contacts-item a img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.heading {
+    background-image: url(../images/main-screen.jpg);
+    background-position: bottom right;
+    background-size: 200%;
+    background-repeat: no-repeat;
+    height: 93vh;
+}
+
+.heading-wr {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 93vh;
+}
+
+.heading-content {
+    position: relative;
+    display: flex;
+    padding: 30vh 16vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 93vh;
+}
+
+.heading-caption {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 7.2rem;
+    line-height: 8.8rem;
+    color: white;
+    border: 3px solid #E4A92E;
+    padding: 1rem 3.5rem;
+}
+
+.heading-description {
+    font-weight: 300;
+    font-size: 6.4rem;
+    color: white;
+    text-align: center;
+    line-height: 7.8rem;
+}
+
+.next-button,
+.prev-button,
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    font-size: 0;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 7.2rem;
+    height: 7.2rem;
+    right: 11.8rem;
+    bottom: 6rem;
+}
+
+.next-button::before,
+.prev-button::before,
+.swiper-button-next::before,
+.swiper-button-prev::before {
+    position: absolute;
+    content: '';
+    width: 2.7rem;
+    top: 65%;
+    right: 15.5%;
+    margin: -0.9rem 0 0 -2rem;
+    border-top: 2px solid white;
+    transform: rotate(-40deg);
+    border-bottom-left-radius: 1rem;
+}
+
+.next-button::after,
+.prev-button::after,
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    position: absolute;
+    content: '';
+    width: 2.7rem;
+    top: 65%;
+    margin: -0.9rem 0 0 -2rem;
+    border-top: 2px solid white;
+    transform: rotate(40deg);
+    right: 44.5%;
+    border-bottom-right-radius: 1rem;
+}
+
+.bake {
+    display: flex;
+    background-image: url(../images/Frame.png), url(../images/Frame-2.png);
+    background-position: bottom right, top left;
+    background-size: contain, 20%;
+    background-repeat: no-repeat;
+    padding: 10rem 18rem 6rem 12.8rem ;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.player {
+    position: relative;
+    border: 2px solid black;
+    margin-right: 13.4rem;
+    width: 100%;
+    max-width: 37.3%;
+}
+
+.player::before {
+    position: absolute;
+    content: '';
+    background-image: url(../images/RO.png);
+    background-size: cover;
+    width: 34.2%;
+    height: 16%;
+    top: 6%;
+    right: -38%;
+}
+
+.player img {
+    position: relative;
+    bottom: 2.5rem;
+    right: 2.5rem;
+}
+
+.bake-info {
+    width: 100%;
+}
+
+.bake-info h2 {
+    font-size: 3.6rem;
+    font-weight: 400;
+    line-height: 4.4rem;
+    margin-bottom: 3rem;
+}
+
+.bake-info p {
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 2.9rem;
+}
+
+.bake-info-wr {
+    display: block;
+}
+
+.pastry {
+    display: flex;
+}
+
+.pastry-img {
+    flex-grow: 1;
+    width: 50%;
+}
+
+.pastry-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.pastry-info {
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 3.4rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    flex-grow: 1;
+    padding: 7rem 9rem  7rem 10rem;
+    width: 50%;
+}
+
+.ingredients {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    text-align: center;
+    background-color: #E8E6E6;
+}
+
+.ingredients-cheese {
+    background: url(../images/cheese.jpg) center center no-repeat;
+    background-size: cover;
+    flex-grow: 1;
+    width: 50%;
+    line-height: 5.2rem;
+    padding: 9% 18rem 25% 18rem;
+}
+
+.ingredients-cheese h2 {
+    font-weight: 700;
+    font-size: 4.8rem;
+}
+
+.ingredients-flour {
+    background: url(../images/flour.jpg) bottom center no-repeat;
+    background-size: cover;
+    flex-grow: 1;
+    width: 50%;
+    line-height: 5.2rem;
+    padding: 9% 18rem 25% 18rem;
+}
+
+.ingredients-flour h2 {
+    font-weight: 700;
+    font-size: 4.8rem;
+}
+
+.ingredients-greens {
+    position: relative;
+    background: url(../images/greenery.jpg) bottom center no-repeat;
+    background-size: cover;
+    width: 35rem;
+    height: 35rem;
+    padding: 14.2rem 6.3rem;
+    bottom: 11.3rem;
+    left: 15.2rem;
+}
+
+.ingredients-greens h2 {
+    font-weight: 700;
+    font-size: 3.6rem;
+    line-height: 4.4rem;
+    text-transform: uppercase;
+}
+
+.ingredients-greens p {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    font-weight: 400;
+    text-transform: lowercase;
+}
+
+.ingredients-info {
+    color: black;
+    text-align: left;
+    width: 97rem;
+    height: 26rem;
+    border: 2px solid black;
+    border-top: none;
+    padding-top: 6rem;
+    padding-left: 18.8rem;
+    width: 70%;
+}
+
+.ingredients-info h2 {
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.ingredients-info p {
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+}
+
+.slider-menu {
+    margin-bottom: 6rem;
+}
+
+.gallery-top {
+    margin-bottom: 20px;
+}
+
+.swiper-button-next {
+    right: 5rem;
+    bottom: 50%;
+    margin-bottom: -3.6rem;
+    transform: rotate(-90deg);
+    border-color: black;
+}
+
+.swiper-button-prev {
+    left: 5rem;
+    bottom: 50%;
+    margin-bottom: -3.6rem;
+    transform: rotate(90deg);
+    border-color: black;
+}
+
+.swiper-button-next::before,
+.swiper-button-prev::before,
+.swiper-button-next::after,
+.swiper-button-prev::after {
+   border-color: black;
+}
+
+.gallery-thumbs {
+    height: 21vw;
+}
+
+.prewiev-gallery .slide-1 {
+    background-image: url(../images/slide-1.jpg);
+    background-size: cover;
+    background-position: left bottom;
+}
+
+.prewiev-gallery .slide-2 {
+    background-image: url(../images/slide-2.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.prewiev-gallery .slide-3 {
+    background-image: url(../images/slide-3.jpg);
+    background-size: cover;
+    background-position: bottom right;
+}
+
+.prewiev-gallery .slide-4 {
+    background-image: url(../images/slide-4.jpg);
+    background-size: cover;
+    background-position: bottom right;
+}
+.menu {
+    position: relative;
+    padding-bottom: 0.5rem;
+    margin-bottom: 8.5rem;
+}
+
+.menu::before {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 74%;
+    background: url(../images/Frame-2.jpg) center center / contain no-repeat;
+    opacity: 0.07;
+    z-index: -1;
+    top: -26%;
+    left: -4%;
+}
+
+.menu::after {
+    content: '';
+    position: absolute;
+    width: 36.5%;
+    height: 48%;
+    background: url(../images/stiker.jpg) center center / contain no-repeat;
+    z-index: -1;
+    opacity: 0.1;
+    bottom: 0;
+    right: 0;
+}
+
+.menu-logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1.8rem;
+}
+
+.menu-logo img {
+    width: 24rem;
+    height: 7rem;
+}
+
+.menu-caption {
+    font-weight: 400;
+    font-size: 2.4rem;
+    padding: 0.5rem 2.2rem;
+    border: 2px solid black;
+    border-top: none;
+}
+
+.menu-img {
+    margin-bottom: 5rem;
+}
+
+.menu-img img {
+    border: 1px solid black;
+    box-shadow: 1rem 0.7rem 0.4rem rgba(0, 0, 0, 0.25) ;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 10px;
+}
+
+.swiper-container-menu .swiper-pagination-bullet {
+    background-color: transparent;
+    opacity: 1;
+    border: 1px solid black;
+    width: 10px;
+    height: 10px;
+}
+
+.swiper-container-menu .swiper-pagination-bullet-active {
+    background-color: black;
+}
+
+.delivery-head {
+    height: 7.5rem;
+    width: 100%;
+    background: url(../images/Layer\ 2.svg) center left / contain repeat;
+    margin-bottom: 9.5rem;
+}
+
+@media screen and (max-width:1430px) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width:1260px) {
+    html {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width:1130px) {
+    html {
+        font-size: 7px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    html {
+        font-size: 7px;
+    }
+}
+
+
+
+

@@ -457,6 +457,11 @@ img {
     box-shadow: 1rem 0.7rem 0.4rem rgba(0, 0, 0, 0.25) ;
 }
 
+.swiper-container-menu {
+    overflow: hidden;
+    width: 100%;
+}
+
 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 0 10px;
 }

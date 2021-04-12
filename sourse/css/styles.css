@@ -89,14 +89,13 @@ img {
 .heading {
     background-image: url(../images/main-screen.jpg);
     background-position: bottom right;
-    background-size: 200%;
     background-repeat: no-repeat;
-    height: 93vh;
+    height: calc(100vh - 11.6rem);
 }
 
 .heading-wr {
     background-color: rgba(0, 0, 0, 0.7);
-    height: 93vh;
+    height: calc(100vh - 11.6rem);
 }
 
 .heading-content {
@@ -106,7 +105,7 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 93vh;
+    height: calc(100vh - 11.6rem);
 }
 
 .heading-caption {
@@ -341,6 +340,9 @@ img {
 }
 
 .slider-menu {
+    max-height: 929px;
+    max-width: 1440px;
+    margin: 0 auto;
     margin-bottom: 6rem;
 }
 
@@ -372,7 +374,7 @@ img {
 }
 
 .gallery-thumbs {
-    height: 21vw;
+    height: 30rem;
 }
 
 .prewiev-gallery .slide-1 {
@@ -478,11 +480,253 @@ img {
     background-color: black;
 }
 
+.delivery {
+    padding-bottom: 7rem;
+    background-color: #E8E6E6;
+}
+
 .delivery-head {
     height: 7.5rem;
     width: 100%;
     background: url(../images/Layer\ 2.svg) center left / contain repeat;
     margin-bottom: 9.5rem;
+}
+
+.delivery-caption {
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 5.8rem;
+    border: 1px solid black;
+    padding: 1rem 4.7rem;
+    width: 43.3rem;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+}
+
+.delivery-caption::before {
+    content: '';
+    position: absolute;
+    background: url(../images/icon-car-2.png) center / contain no-repeat;
+    width: 55%;
+    height: 200%;
+    left: 50%;
+    top: -115%;
+    margin-left: -27.5%;
+    z-index: 0;
+    opacity: 0.2;
+}
+
+.delivery-wr {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    font-weight: 400;
+}
+
+.delivery-contacts {
+    width: 50%;
+    margin-top: -2.5rem;
+    padding: 0 5%;
+}
+
+.delivery-contacts p:first-child {
+    font-weight: 700;
+    line-height: 3rem;
+    margin-bottom: 1.2rem;
+}
+
+.delivery-contacts .button {
+    position: relative;
+    text-align: right;
+    min-width: 29.5rem;
+    background-color: #E4A92E;
+    border: none;
+    padding: 2.2rem 4.5rem;
+    font-size: 2.4rem;
+    margin: 3rem 0;
+}
+
+.delivery-contacts .button:last-child {
+    margin-top: 0;
+} 
+
+.delivery-contacts .button::before {
+    content: '';
+    position: absolute;
+    width: 10%;
+    height: 50%;
+    background: center / contain no-repeat url(../images/Layer\ 1.svg);
+    top: 50%;
+    left: 2.4rem;
+    margin-top: -5%;
+}
+
+.delivery-contacts .button:last-child::before {
+    content: '';
+    position: absolute;
+    width: 10%;
+    height: 50%;
+    background: center / contain no-repeat url(../images/watsapp.svg);
+    top: 50%;
+    left: 2.4rem;
+    margin-top: -5%;
+}
+
+.delivery-info {
+    width: 50%;
+}
+
+.delivery-info p:first-child {
+    font-weight: 700;
+}
+
+.delivery-price {
+    display: block;
+    font-size: 3.6rem;
+}
+
+.delivery-info p:nth-child(2) {
+    display: inline-block;
+    position: relative;
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.delivery-info p:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    width: 2.4rem;
+    height: 2.4rem;
+    background: center / contain no-repeat url(../images/clock.svg);
+    top: 0;
+    left: -10%;
+}
+
+.delivery-info p:nth-child(3) {
+    margin-bottom: 1.6rem;
+}
+
+.delivery-info p:nth-child(4) {
+    margin-bottom: 1.2rem;
+}
+
+.delivery-info p:nth-child(5) {
+    display: inline-block;
+    position: relative;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.delivery-info p:nth-child(5)::before {
+    content: '';
+    position: absolute;
+    width: 2rem;
+    height: 2.7rem;
+    background: center / contain no-repeat url(../images/Vector.svg);
+    top: 0;
+    left: -5%;
+}
+
+.delivery-info p:last-child {
+    font-weight: 300;
+}
+
+.contacts {
+    display: flex;
+}
+
+.contacts-info-wr {
+    width: 50%;
+    background: center / cover no-repeat url(../images/CE3B7DE3-77D7-47D3-9E9A-7BBE300D81E7\ 2.jpg);
+}
+
+.contacts-info {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    color: white;
+    padding: 5rem 0 18rem 10rem;
+    font-weight: 500;
+}
+
+.contacts-info h2 {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 3.6rem;
+    line-height: 4.4rem;
+    border: 1px solid white;
+    padding: 1.4rem 1.6rem;
+    margin-bottom: 4rem;
+}
+
+.contacts-info p:nth-child(2){
+    display: inline-block;
+    position: relative;
+    font-weight: 500;
+    margin-bottom: 3.4rem;
+    margin-left: 2.3rem;
+}
+
+.contacts-info p:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    width: 2rem;
+    height: 2.7rem;
+    background: center / contain no-repeat url(../images/Vector\ —\ копия.svg);
+    top: 50%;
+    left: -5%;
+    margin-top: -1.35rem;
+}
+
+.contacts-info p:nth-child(4), 
+.contacts-info p:nth-child(6){
+    display: inline-block;
+    font-weight: 300;
+    margin-bottom: 3.4rem;
+}
+
+.contacts-info p:nth-child(7) {
+    margin-bottom: 1.3rem;
+}
+
+.contacts-info a {
+    color: white;
+}
+
+.contacts-info img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 1rem;
+}
+
+.contacts-map {
+    background: center / cover no-repeat url(../images/Mask\ Group-2.jpg);
+    width: 50%;
+}
+
+.main-footer {
+    display: flex;
+    background-color: black;
+    justify-content: flex-end;
+}
+
+.main-footer>img {
+    margin-right: auto;
+    margin-left: 7rem;
+}
+
+.main-footer a {
+    align-self: center;
+    margin-right: 3rem;
+}
+
+.main-footer a:nth-child(3) {
+    margin-right: 10rem;
 }
 
 @media screen and (max-width:1430px) {

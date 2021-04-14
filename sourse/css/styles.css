@@ -62,6 +62,16 @@ img {
     min-width: 14.7rem;
     text-align: center;
     line-height: 2.2rem;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.button:hover {
+    background-color: #E8E6E6;
+    border: 1px solid #E8E6E6;
+}
+
+.button:active {
+    color: #E4A92E;
 }
 
 .site-navigation-item {
@@ -84,6 +94,11 @@ img {
 .header-contacts-item a img {
     width: 3rem;
     height: 3rem;
+    transition: transform 0.2s;
+}
+
+.header-contacts-item a img:hover {
+    transform: scale(1.1);
 }
 
 .heading {
@@ -153,6 +168,7 @@ img {
     border-top: 2px solid white;
     transform: rotate(-40deg);
     border-bottom-left-radius: 1rem;
+    transition: top 0.2s;
 }
 
 .next-button::after,
@@ -168,6 +184,18 @@ img {
     transform: rotate(40deg);
     right: 44.5%;
     border-bottom-right-radius: 1rem;
+    transition: top 0.2s;
+}
+
+.next-button:hover:after,
+.prev-button:hover:after,
+.swiper-button-next:hover:after,
+.swiper-button-prev:hover:after,
+.next-button:hover::before,
+.prev-button:hover::before,
+.swiper-button-next:hover::before,
+.swiper-button-prev:hover::before {
+    top: 75%;
 }
 
 .bake {
@@ -195,16 +223,57 @@ img {
     content: '';
     background-image: url(../images/RO.png);
     background-size: cover;
-    width: 34.2%;
+    width: 36.2%;
     height: 16%;
     top: 6%;
-    right: -38%;
+    right: -40%;
 }
 
-.player img {
+/* .player::after {
+    position: absolute;
+    content: '';
+    background-image: url(../images/play_icon\ 1.svg);
+    background-size: cover;
+    width: 23.7%;
+    height: 20%;
+    top: calc(50% - 2.5rem);
+    left: calc(50% - 2.5rem);
+    margin: -10% 0 0 -10%;
+} */
+
+/* .player img {
     position: relative;
     bottom: 2.5rem;
     right: 2.5rem;
+} */
+
+.video-play {
+    position: absolute;
+    content: '';
+    background-image: url(../images/play_icon\ 1.svg);
+    background-size: cover;
+    width: 25%;
+    height: 20%;
+    top: calc(50% - 2.5rem);
+    left: calc(50% - 2.5rem);
+    margin: -10% 0 0 -10%;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.player:hover .video-play {
+    opacity: 1;
+}
+
+.player video {
+    display: block;
+    position: relative;
+    bottom: 2rem;
+    right: 2rem;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 2px solid black;
 }
 
 .bake-info {
@@ -530,7 +599,7 @@ img {
 .delivery-contacts {
     width: 50%;
     margin-top: -2.5rem;
-    padding: 0 5%;
+    padding: 0 10%;
 }
 
 .delivery-contacts p:first-child {
@@ -543,11 +612,13 @@ img {
     position: relative;
     text-align: right;
     min-width: 29.5rem;
-    background-color: #E4A92E;
+    background-color: #FFAC00;
     border: none;
     padding: 2.2rem 4.5rem;
     font-size: 2.4rem;
     margin: 3rem 0;
+    transition-property: background-color;
+    transition-duration: 0.2s;
 }
 
 .delivery-contacts .button:last-child {
@@ -574,6 +645,15 @@ img {
     top: 50%;
     left: 2.4rem;
     margin-top: -5%;
+}
+
+.delivery-contacts .button:hover {
+    background-color: #F3C157;
+}
+
+.delivery-contacts .button:active {
+    background-color: #E4A92E;
+    color: black;
 }
 
 .delivery-info {
@@ -752,7 +832,3 @@ img {
         font-size: 7px;
     }
 }
-
-
-
-

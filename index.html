@@ -40,7 +40,11 @@
         <section id="next-screen" class="about-pizza">
             <div class="bake">
                 <div class="player">
-                    <img src="./sourse/images/player.jpg">
+                    <video poster="./sourse/images/Player-Back.jpg" muted >
+                        <source type="video/mp4" src="./sourse/video/zero_pizza-video-2021-04-14.mp4">
+                    </video>
+                    <div class="video-play"></div>
+                    <!-- <img src="./sourse/images/player.jpg"> -->
                 </div>
                 <div class="bake-info">
                     <h2>Глиняная печь</h2>
@@ -120,7 +124,7 @@
                 </div>
             </div>
         </section>
-        <section class="delivery">
+        <section id="delivery" class="delivery">
             <div class="delivery-head"></div>
             <h2 class="delivery-caption">О доставке</h2>
             <div class="delivery-wr">
@@ -132,7 +136,7 @@
                         <a href="#" class="button">Позвонить</a>
                         <a href="#" class="button">Написать</a>
                 </div>
-                <div id="delivery" class="delivery-info">
+                <div class="delivery-info">
                     <p>Бесплатная доставка от
                         <span class="delivery-price">599₽</span></p>
                     <p>Среднее время доставки 60 минут</p>
@@ -167,6 +171,7 @@
         <a href="#"><img src="./sourse/images/watsapp.svg" alt="watsapp" width="30px" height="30px"></a>
         <a href="#"><img src="./sourse/images/insta.svg" alt="instagram" width="30px" height="30px"></a>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </footer>
 </body>
 <script src="./sourse/js/main.js"></script>

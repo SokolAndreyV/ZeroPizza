@@ -40,10 +40,25 @@
     }, 500, 'linear');
   });
 
+  var PlayerButtonPlay = document.querySelector('.video-play'),
+      PlayerButtonPause = document.querySelector('.video-pause');
+
+
  $('.video-play').click(function(){
     $('video')[0].play();
     });
 
-// $('.player').click(function(){
-//     $('video')[0].pause();
-//     });
+    $('.video-pause').click(function(){
+        $('video')[0].pause();
+        });
+
+
+    PlayerButtonPlay.addEventListener('click', function() {
+        PlayerButtonPlay.classList.add('player-hide');
+        PlayerButtonPause.classList.add('player-view');
+    });
+
+    PlayerButtonPause.addEventListener('click', function() {
+        PlayerButtonPause.classList.remove('player-view');
+        PlayerButtonPlay.classList.remove('player-hide');
+    });

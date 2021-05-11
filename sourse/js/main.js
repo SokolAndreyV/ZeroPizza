@@ -85,3 +85,17 @@ var FirstSlide = document.querySelector('.swiper-button-1'),
       SwiperMenu.classList.remove('first-menu');
       SwiperMenu.classList.remove('second-menu');
     });
+
+    var MenuButton = document.querySelector('.site-navigation'),
+        MenuPopup = document.querySelector('.site-navigation-wr'),
+        MenuButtonDecor = document.querySelector('.menu-button'),
+        MenuButtonDecorDwn = document.querySelector('.menu-button-down');
+
+
+        MenuButton.addEventListener('click', foo, false);
+
+        function foo() {
+            MenuPopup.classList.toggle('site-navigation-menu');
+            MenuButtonDecor.classList.toggle('menu-button-close');
+            MenuButtonDecorDwn.classList.toggle('menu-button-close');
+          };

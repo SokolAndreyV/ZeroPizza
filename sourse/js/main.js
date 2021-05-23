@@ -205,7 +205,7 @@ let slider = document.querySelector('.slider'),
       // запрет ухода влево на первом слайде
       if (slideIndex === 0) {
         if (posInit < posX1) {
-          setTransform(transform, 0);
+          slideIndex = 3;
           return;
         } else {
           allowSwipe = true;
@@ -215,7 +215,7 @@ let slider = document.querySelector('.slider'),
       // запрет ухода вправо на последнем слайде
       if (slideIndex === --slides.length) {
         if (posInit > posX1) {
-          setTransform(transform, lastTrf);
+          slideIndex = -1;
           return;
         } else {
           allowSwipe = true;
